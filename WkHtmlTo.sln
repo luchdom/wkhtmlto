@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85B30D07-08D3-4D88-8364-0D91408E2CF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{E197B1D4-0FF7-44F2-898D-35962978CEE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlToPdf", "src\WkHtmlToPdf\WkHtmlToPdf.csproj", "{A38AF6FF-507E-4194-B752-898679F7FD23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlShared", "src\WkHtmlShared\WkHtmlShared.csproj", "{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlToImage", "src\WkHtmlToImage\WkHtmlToImage.csproj", "{9FAA2E85-99EC-432C-AF55-0DDE6277B192}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{6D10758B-96A3-4E89-9EB8-A7E886721C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlSampleConsole", "src\Samples\WkHtmlSampleConsole\WkHtmlSampleConsole.csproj", "{BF2573FD-C9D9-494F-AB67-E678925992CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linux", "Linux", "{3B45482A-7CD5-4B69-984B-D1E8AD027D4A}"
+	ProjectSection(SolutionItems) = preProject
+		assets\Linux\wkhtmltoimage = assets\Linux\wkhtmltoimage
+		assets\Linux\wkhtmltopdf = assets\Linux\wkhtmltopdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{48962F91-3BFE-4476-8D97-F37C9CCC76C4}"
+	ProjectSection(SolutionItems) = preProject
+		assets\Windows\wkhtmltoimage.exe = assets\Windows\wkhtmltoimage.exe
+		assets\Windows\wkhtmltopdf.exe = assets\Windows\wkhtmltopdf.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF98E09B-C1AF-4F9F-A14D-6D76E9EFB52C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlSampleApi", "src\Samples\WkHtmlSampleApi\WkHtmlSampleApi.csproj", "{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A38AF6FF-507E-4194-B752-898679F7FD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38AF6FF-507E-4194-B752-898679F7FD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38AF6FF-507E-4194-B752-898679F7FD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38AF6FF-507E-4194-B752-898679F7FD23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAA2E85-99EC-432C-AF55-0DDE6277B192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAA2E85-99EC-432C-AF55-0DDE6277B192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAA2E85-99EC-432C-AF55-0DDE6277B192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAA2E85-99EC-432C-AF55-0DDE6277B192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2573FD-C9D9-494F-AB67-E678925992CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2573FD-C9D9-494F-AB67-E678925992CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2573FD-C9D9-494F-AB67-E678925992CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2573FD-C9D9-494F-AB67-E678925992CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A38AF6FF-507E-4194-B752-898679F7FD23} = {85B30D07-08D3-4D88-8364-0D91408E2CF4}
+		{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F} = {85B30D07-08D3-4D88-8364-0D91408E2CF4}
+		{9FAA2E85-99EC-432C-AF55-0DDE6277B192} = {85B30D07-08D3-4D88-8364-0D91408E2CF4}
+		{BF2573FD-C9D9-494F-AB67-E678925992CF} = {6D10758B-96A3-4E89-9EB8-A7E886721C81}
+		{3B45482A-7CD5-4B69-984B-D1E8AD027D4A} = {E197B1D4-0FF7-44F2-898D-35962978CEE0}
+		{48962F91-3BFE-4476-8D97-F37C9CCC76C4} = {E197B1D4-0FF7-44F2-898D-35962978CEE0}
+		{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B} = {6D10758B-96A3-4E89-9EB8-A7E886721C81}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {106577FB-8C1F-405B-A7D8-B045C4FFF9D1}
+	EndGlobalSection
+EndGlobal

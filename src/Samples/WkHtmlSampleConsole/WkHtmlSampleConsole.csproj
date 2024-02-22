@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Render\Linux\" />
+    <Folder Include="Render\Windows\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\assets\Linux\wkhtmltoimage" Link="Render\Linux\wkhtmltoimage">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\assets\Linux\wkhtmltopdf" Link="Render\Linux\wkhtmltopdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\assets\Windows\wkhtmltoimage.exe" Link="Render\Windows\wkhtmltoimage.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\assets\Windows\wkhtmltopdf.exe" Link="Render\Windows\wkhtmltopdf.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\WkHtmlToImage\WkHtmlToImage.csproj" />
+    <ProjectReference Include="..\..\WkHtmlToPdf\WkHtmlToPdf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HtmlContent\receipt.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
