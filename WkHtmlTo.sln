@@ -7,15 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85B30D07-08D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{E197B1D4-0FF7-44F2-898D-35962978CEE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlToPdf", "src\WkHtmlToPdf\WkHtmlToPdf.csproj", "{A38AF6FF-507E-4194-B752-898679F7FD23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlToPdf", "src\WkHtmlToPdf\WkHtmlToPdf.csproj", "{A38AF6FF-507E-4194-B752-898679F7FD23}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlShared", "src\WkHtmlShared\WkHtmlShared.csproj", "{F5C39AC7-15A0-448A-9F9A-8B6C1B461B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlToImage", "src\WkHtmlToImage\WkHtmlToImage.csproj", "{9FAA2E85-99EC-432C-AF55-0DDE6277B192}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlToImage", "src\WkHtmlToImage\WkHtmlToImage.csproj", "{9FAA2E85-99EC-432C-AF55-0DDE6277B192}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{6D10758B-96A3-4E89-9EB8-A7E886721C81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlSampleConsole", "src\Samples\WkHtmlSampleConsole\WkHtmlSampleConsole.csproj", "{BF2573FD-C9D9-494F-AB67-E678925992CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlSampleConsole", "src\Samples\WkHtmlSampleConsole\WkHtmlSampleConsole.csproj", "{BF2573FD-C9D9-494F-AB67-E678925992CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linux", "Linux", "{3B45482A-7CD5-4B69-984B-D1E8AD027D4A}"
 	ProjectSection(SolutionItems) = preProject
@@ -31,11 +31,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{4896
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF98E09B-C1AF-4F9F-A14D-6D76E9EFB52C}"
 	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlSampleApi", "src\Samples\WkHtmlSampleApi\WkHtmlSampleApi.csproj", "{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlSampleApi", "src\Samples\WkHtmlSampleApi\WkHtmlSampleApi.csproj", "{62C1BC8C-D3C5-46A4-8D1D-63ABA31B444B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

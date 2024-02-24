@@ -1,3 +1,5 @@
+using WkHtmlToImage.Extensions;
+using WkHtmlToPdf.Extensions;
 
 namespace WkHtmlSampleApi;
 
@@ -10,9 +12,11 @@ public class Program
         // Add services to the container.
 
         builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        builder.Services.AddRouting(options => options.LowercaseUrls = true);
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddHtmlToPdf("Render");
+        builder.Services.AddHtmlToImage("Render");
 
         var app = builder.Build();
 

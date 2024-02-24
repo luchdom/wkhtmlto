@@ -1,11 +1,13 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER app
+USER root
 WORKDIR /app
+
 # Download the necessary packages to execute wkhtml 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libxrender1 libxext6 libfontconfig libjpeg62-turbo libpng16-16 && \
     rm -rf /var/lib/apt/lists/*
+USER app
 EXPOSE 8080
 EXPOSE 8081
 
@@ -25,4 +27,7 @@ RUN dotnet publish "./WkHtmlSampleApi.csproj" -c $BUILD_CONFIGURATION -o /app/pu
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+RUN chmod +x Render/Linux/wkhtmltoimage
+RUN chmod +x Render/Linux/wkhtmltopdf
+RUN rm -rf Render/Windows
 ENTRYPOINT ["dotnet", "WkHtmlSampleApi.dll"]

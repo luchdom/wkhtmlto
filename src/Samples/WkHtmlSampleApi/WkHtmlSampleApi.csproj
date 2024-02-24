@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -13,6 +13,37 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\WkHtmlToImage\WkHtmlToImage.csproj" />
+    <ProjectReference Include="..\..\WkHtmlToPdf\WkHtmlToPdf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HtmlContent\receipt.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Render\Linux\" />
+    <Folder Include="Render\Windows\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\assets\Linux\wkhtmltoimage" Link="Render\Linux\wkhtmltoimage">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\assets\Linux\wkhtmltopdf" Link="Render\Linux\wkhtmltopdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\assets\Windows\wkhtmltoimage.exe" Link="Render\Windows\wkhtmltoimage.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\assets\Windows\wkhtmltopdf.exe" Link="Render\Windows\wkhtmltopdf.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
