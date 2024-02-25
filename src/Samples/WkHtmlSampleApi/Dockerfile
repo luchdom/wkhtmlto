@@ -5,9 +5,11 @@ WORKDIR /app
 
 # Download the necessary packages to execute wkhtml 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends libxrender1 libxext6 libfontconfig libjpeg62-turbo libpng16-16 && \
+    apt-get install -y --no-install-recommends libxrender1 libxext6 libfontconfig libjpeg62-turbo libpng16-16 wget && \
     rm -rf /var/lib/apt/lists/*
-USER app
+RUN wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1ubuntu2.1~18.04.23_amd64.deb
+RUN dpkg -i libssl1.1_1.1.1-1ubuntu2.1~18.04.23_amd64.deb
+## USER app
 EXPOSE 8080
 EXPOSE 8081
 
